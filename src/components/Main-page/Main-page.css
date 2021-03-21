@@ -1,12 +1,101 @@
 .main-page {
-    width: 100%;    
+    width: 100%;
     height: 100%;
     background-image: url(https://images.wallpaperscraft.ru/image/ptitsa_siluet_vektor_134154_3840x2160.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
-h1{
-    font-family: 'Roboto Condensed', sans-serif;
+header {
+    height: 15vh;
+}
+
+header h1 {
     color: #ffffff;
+    padding: 30px;
+}
+
+main {
+    height: 70vh;
+    padding: 3vh 3vw;
+    display: flex;
+}
+
+.main-info {
+    width: 50vw;
+    padding: 2vh 2vw;
+}
+
+.main-info h2 {
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.main-info p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.auth-form {
+    width: 50vw;
+    padding: 2vh 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-form h3 {
+    padding-bottom: 40px;
+    align-self: center;
+}
+
+.auth-form label {
+    display: block;
+    color: #943d1e;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.auth-form input {
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: #000000;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.auth-form button {
+    border-radius: 4px;
+    background-color: #943d1e;
+    color: #ffffff;
+    width: 12vw;
+    height: 7vh;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 40px auto;
+    font-size: 16px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 15vh;
+    font-size: 18px;
+}
+
+footer a:hover {
+    color: #943d1e;
+    transition: 0.5s;
+}
+
+.rs-logo {
+    background-image: url(https://rs.school/images/rs_school_js.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
 }
