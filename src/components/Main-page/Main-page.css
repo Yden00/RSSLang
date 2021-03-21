@@ -1,0 +1,12 @@
+.main-page {
+    width: 100%;    
+    height: 100%;
+    background-image: url(https://images.wallpaperscraft.ru/image/ptitsa_siluet_vektor_134154_3840x2160.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+}
