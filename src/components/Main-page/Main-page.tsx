@@ -1,40 +1,31 @@
 import "./Main-page.css";
-function MainPage() {
+function MainPage(props:any) {
+  const loginHandler = () => {
+      props.history.replace('/learning')
+  }
   return (
     <div className="main-page">
-      <header>
-        <h1>RSLang</h1>
-      </header>
-      <main>
-        <div className="main-info">
-          <h2>English</h2>
-          <p>
-            Приложение для изучения иностранных слов с техникой интервального
-            повторения, отслеживания индивидуального прогресса и мини-игр.
-            Правила интервального повторения: — интервал обучения по умолчанию -
-            24 часа; — пользователь допустил ошибку или нажал кнопку повтора - 2
-            часа; — пользователь нажал кнопку 'хорошо' - 48 часов; —
-            пользователь нажал кнопку 'легко' - 120 часов.
-          </p>
-        </div>
-        <div className="auth">
-          <form className="auth-form">
-            <h3>Login</h3>
-            <label htmlFor="Email">Email</label>
-            <input className="Email" type="text"/>
-            <label htmlFor="Password">Password</label>
-            <input className="Password" type="text"/>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </main>
-      <footer>
-        <ul>
-          <li><a href="https://rs.school/js/">RSSchool</a></li>
-          <li className="rs-logo"></li>
-          <li><a href="https://github.com/ue4prog">Github</a></li>
-        </ul>
-      </footer>
+      <div className="main-info">
+        <h2>English</h2>
+        <p>
+          App for learning foreign words with spaced repetition techniques,
+          tracking individual progress and mini-games. Interval repetition
+          rules: - The default learning interval is 24 hours; - the user made a
+          mistake or pressed the snooze button - 2 hours; - the user pressed the
+          'good' button - 48 hours; - the user pressed the 'easy' button - 120
+          hours.
+        </p>
+      </div>
+      <div className="auth">
+        <form className="auth-form">
+          <h3>Login</h3>
+          <label htmlFor="Email">Email</label>
+          <input className="Email" type="text" />
+          <label htmlFor="Password">Password</label>
+          <input className="Password" type="text"/>
+          <button onClick={loginHandler} type="submit">Submit</button>
+        </form>
+      </div>
     </div>
   );
 }

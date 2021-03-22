@@ -1,0 +1,9 @@
+header {
+  height: 15vh;
+  background-color: transparent;
+}
+
+header h1 {
+  color: #ffffff;
+  padding: 30px;
+}

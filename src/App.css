@@ -1,0 +1,27 @@
+.App {
+  background-image: url(https://images.wallpaperscraft.ru/image/ptitsa_siluet_vektor_134154_3840x2160.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  height: 15vh;
+  font-size: 18px;
+}
+
+footer a:hover {
+  color: #943d1e;
+  transition: 0.5s;
+}
+
+.rs-logo {
+  background-image: url(https://rs.school/images/rs_school_js.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 50px;
+}
